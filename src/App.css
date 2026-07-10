@@ -11,6 +11,10 @@ body {
   color: #333333;
 }
 
+main {
+  min-height: 90vh;
+}
+
 /* Header */
 .header {
   padding: 40px 16px 32px;
@@ -72,11 +76,13 @@ body {
 /* Home */
 .home {
   padding: 48px 16px;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -103,6 +109,46 @@ body {
 .home-hero h2,
 .home-hero p {
   color: #fff;
+}
+
+.home-features {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.feature-card {
+  padding: 24px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.feature-icon {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--text-h);
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .home-features {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Search */
@@ -237,7 +283,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 20px;
   text-align: left;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 14px;
@@ -247,7 +293,7 @@ body {
 .forecast-strip {
   list-style: none;
   display: flex;
-  gap: 8px;
+  gap: 16px;
   margin-top: 16px;
   overflow-x: auto;
 }

@@ -11,6 +11,24 @@ function Home() {
           attuali, in tempo reale.
         </p>
       </Link>
+
+      <div className="home-features">
+        <div className="feature-card">
+          <span className="feature-icon">🌡️</span>
+          <h3>Meteo in tempo reale</h3>
+          <p>Temperatura, umidità, vento e condizioni aggiornate al momento.</p>
+        </div>
+        <div className="feature-card">
+          <span className="feature-icon">📅</span>
+          <h3>Previsioni a 5 giorni</h3>
+          <p>Scopri in anticipo il meteo dei prossimi giorni, giorno per giorno.</p>
+        </div>
+        <div className="feature-card">
+          <span className="feature-icon">🌍</span>
+          <h3>Qualsiasi città</h3>
+          <p>Cerca una città in tutto il mondo e trova subito i risultati.</p>
+        </div>
+      </div>
     </section>
   )
 }
