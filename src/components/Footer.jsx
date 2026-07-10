@@ -7,7 +7,7 @@ function Footer() {
           OpenWeatherMap
         </a>
       </p>
-      <p>Progetto scolastico &middot; {new Date().getFullYear()}</p>
+      <p>Progetto Epicode &middot; {new Date().getFullYear()}</p>
     </footer>
   )
 }
